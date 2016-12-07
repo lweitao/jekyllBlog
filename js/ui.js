@@ -19,7 +19,6 @@
       created: function () {
         this.url = localStorage.getItem("url") || "http://";
         this.paramBody = JSON.parse(localStorage.getItem("paramBody")) || [];
-        this.btnTips = "run";
       },
       http: {
            headers: {'Content-Type': 'application/x-www-form-urlencoded'}
