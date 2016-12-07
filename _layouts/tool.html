@@ -65,7 +65,7 @@
 		                <option>GET</option>
 		            </select>
 		    		<input class="pure-input-2-3" type="text" placeholder="http://localhost/youraddress" v-model="url">
-		            <button class="pure-button pure-button-primary" v-on:click.prevent="goRequest">{{url}}</button>
+		            <button class="pure-button pure-button-primary" v-on:click.prevent="goRequest" v-text="btnTips"></button>
 		        </fieldset>
 		    </form>  
             <h2 class="content-subhead">param.data</h2>        
@@ -83,7 +83,7 @@
 		        </thead>
 		        <tbody>
 		            <tr v-for="(param, index) in paramBody">
-		                <td>{{index}}</td>
+		                <td v-text="index"></td>
 		                <td><input type="text" v-model="param.key"></td>
 		                <td><input type="text" v-model="param.value"></td>
 		                <td>
@@ -95,7 +95,7 @@
 
 
             <h2 class="content-subhead">response {{result.status}}</h2>  
-            <pre class="code" data-language="html">{{result.body}}</pre>
+            <pre class="code" data-language="html" v-text="result.body"></pre>
         </div>
     </div>
 </div>
