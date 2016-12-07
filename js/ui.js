@@ -16,6 +16,10 @@
         paramBody: [],
         result: ''
       },
+      created: function () {
+        this.url = localStorage.getItem("url") || "http://";
+        this.paramBody = JSON.parse(localStorage.getItem("paramBody")) || [];
+      },
       http: {
            headers: {'Content-Type': 'application/x-www-form-urlencoded'}
       },
