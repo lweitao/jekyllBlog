@@ -14,7 +14,8 @@
         btnTips: 'run',
         url: 'http://',
         paramBody: [],
-        result: ''
+        result: '',
+        showHelp: false
       },
       created: function () {
         this.url = localStorage.getItem("url") || "http://";
@@ -43,6 +44,10 @@
 
         deleteParam: function(index) {
             this.paramBody.splice(index, 1);
+        },
+
+        helpme: function() {
+            this.showHelp = !this.showHelp;
         }
       }
     })
