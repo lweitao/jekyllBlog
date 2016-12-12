@@ -22,7 +22,7 @@
         this.paramBody = JSON.parse(localStorage.getItem("paramBody")) || [];
       },
       http: {
-           headers: {'Content-Type': 'application/x-www-form-urlencoded'}
+           headers: {'Content-Type': 'application/x-www-form-urlencoded;charset=utf-8'}
       },
       methods: {
         goRequest: function (event) {
