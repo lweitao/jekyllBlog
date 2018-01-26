@@ -1,0 +1,13 @@
+---
+layout: default
+title: git stash
+---
+<h2>{{ page.title }}</h2>
+<p>当你在a分支开发时，不得不切换到b分支，此时应该保证a分支的代码已全部提交，否则无法切换分支</p>
+<p>即使可以切换分支，a分支未提交的代码也会带到b分支，污染当前的b分支</p>
+<p>于是就有了git stash命令</p>
+<p>git stash // 贮存当前分支未提交的代码</p>
+<p>而后，b分支处理完了，可以愉快地切换回a分支，并且把贮存的代码提出来</p>
+<p>git stash pop // 提取贮存的代码</p>
+<p>more: https://git-scm.com/book/zh/v1/Git-%E5%B7%A5%E5%85%B7-%E5%82%A8%E8%97%8F%EF%BC%88Stashing%EF%BC%89</p>
+<p>{{ page.date | date_to_string }}</p>
