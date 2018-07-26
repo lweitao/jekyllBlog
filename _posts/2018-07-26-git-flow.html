@@ -1,0 +1,17 @@
+---
+layout: default
+title: git flow
+---
+<h2>{{ page.title }}</h2>
+<p>master branch</p>
+<span>可发布版本</span>
+<p>develop branch</p>
+<span>最新版本</span>
+<p>releases</p>
+<span>可发布的develop branch，归于develop branch/master branch</span>
+<p>hotfixes</p>
+<span>用于修复非预期bug，从master branch拉取，归于develop branch/master branch</span>
+<p>features</p>
+<span>源于develop branch，归于develop branch，用于开发功能点</span>
+ 
+<p>{{ page.date | date_to_string }}</p>
