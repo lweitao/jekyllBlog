@@ -1,0 +1,23 @@
+---
+layout: default
+title: git fast forward
+---
+<h2>{{ page.title }}</h2>
+<p>fast-forward： 快照模式</p>
+<ul>
+	<li>拉取master分支</li>
+	<li>创建dev分支</li>
+	<li>修改dev分支，提交，合并到master</li>
+	<li>master在dev分支创建之后未产生任何commit，直接将指针指向dev分支</li>
+</ul>
+
+<p>no-fast-forward: 非快照模式</p>
+<ul>
+	<li>拉取master分支</li>
+	<li>创建dev分支</li>
+	<li>修改dev分支，提交，合并到master</li>
+	<li>即使master在dev分支创建之后未产生任何commit，仍然保存dev分支，记录这次合并操作</li>
+</ul>
+
+
+<p>{{ page.date | date_to_string }}</p>
